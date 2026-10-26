@@ -1,0 +1,65 @@
+/* Styles specific to individual stage detail pages (pages/stages/*.html) */
+
+.stage-hero {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+  background:
+    radial-gradient(ellipse at 50% 20%, rgba(138, 31, 31, 0.3), transparent 60%),
+    var(--bg-void);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.stage-hero .stage-number {
+  font-size: 3.5rem;
+}
+
+.stage-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin-top: var(--space-xs);
+}
+
+.stage-body {
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+}
+
+.stage-body p {
+  color: var(--ink-dim);
+  margin-bottom: var(--space-md);
+  font-size: 1.05rem;
+}
+
+.stage-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-md) var(--space-xl);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-md);
+}
+
+.stage-nav a {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  transition: color var(--transition);
+}
+
+.stage-nav a:hover {
+  color: var(--glow);
+}
+
+.stage-nav .disabled {
+  color: var(--ink-dim);
+  opacity: 0.4;
+  pointer-events: none;
+}

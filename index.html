@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>33AD — Walk the Passion in Virtual Reality</title>
+  <meta name="description" content="33AD is a location-based VR experience that walks you through the Passion of Jesus Christ across five immersive stages." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/intro.css" />
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.1/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">33AD</a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="#stages">The Stages</a>
+        <a href="#location">Location</a>
+        <a href="pages/tickets.html">Tickets</a>
+        <a href="pages/faq.html">FAQ</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Intro: Calvary -> headset removed/spun/pushed-in -> handoff to page background -->
+    <section class="intro-scroll" id="intro-scroll">
+      <div class="intro-sticky">
+        <canvas id="intro-canvas"></canvas>
+        <div class="intro-fallback-bg"></div>
+
+        <div class="intro-copy">
+          <span class="eyebrow">A Location-Based VR Experience</span>
+          <h1 class="hero-title">33AD</h1>
+          <p class="hero-tagline">Placeholder tagline — step into the final hours of Christ's Passion, in full immersive VR, across five physical stages.</p>
+          <div class="hero-actions">
+            <a href="pages/tickets.html" class="btn btn-primary">Reserve Your Experience</a>
+            <a href="#stages" class="btn btn-ghost">Explore the Stages</a>
+          </div>
+        </div>
+        <span class="intro-scroll-hint">Scroll</span>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">About the Experience</span>
+          <h2>Placeholder section title</h2>
+          <p>Placeholder copy describing the venue, the technology, and what makes 33AD different from a film or a museum exhibit — this is a short lead paragraph to be replaced with final copy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stages -->
+    <section class="section section-alt" id="stages">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">The Journey</span>
+          <h2>Five Stages of the Passion</h2>
+          <p>Placeholder intro — each stage is a physical room paired with a VR sequence, walked in order from the Last Supper to the Resurrection.</p>
+        </div>
+
+        <div class="stage-grid">
+
+          <a href="pages/stages/stage-01.html" class="stage-card reveal">
+            <span class="stage-number">01</span>
+            <h3>The Last Supper</h3>
+            <p>Placeholder description of this stage's setting and VR sequence.</p>
+            <span class="stage-link">Enter Stage →</span>
+          </a>
+
+          <a href="pages/stages/stage-02.html" class="stage-card reveal">
+            <span class="stage-number">02</span>
+            <h3>Gethsemane</h3>
+            <p>Placeholder description of this stage's setting and VR sequence.</p>
+            <span class="stage-link">Enter Stage →</span>
+          </a>
+
+          <a href="pages/stages/stage-03.html" class="stage-card reveal">
+            <span class="stage-number">03</span>
+            <h3>The Trial</h3>
+            <p>Placeholder description of this stage's setting and VR sequence.</p>
+            <span class="stage-link">Enter Stage →</span>
+          </a>
+
+          <a href="pages/stages/stage-04.html" class="stage-card reveal">
+            <span class="stage-number">04</span>
+            <h3>Via Dolorosa</h3>
+            <p>Placeholder description of this stage's setting and VR sequence.</p>
+            <span class="stage-link">Enter Stage →</span>
+          </a>
+
+          <a href="pages/stages/stage-05.html" class="stage-card reveal">
+            <span class="stage-number">05</span>
+            <h3>Crucifixion &amp; Resurrection</h3>
+            <p>Placeholder description of this stage's setting and VR sequence.</p>
+            <span class="stage-link">Enter Stage →</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="section" id="location">
+      <div class="container">
+        <div class="split">
+          <div class="reveal">
+            <span class="eyebrow">Visit</span>
+            <h2>Placeholder Venue Name</h2>
+            <dl class="info-list">
+              <div>
+                <dt>Address</dt>
+                <dd>Placeholder address, City</dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>Placeholder hours — e.g. Tue–Sun, 10:00–20:00</dd>
+              </div>
+              <div>
+                <dt>Duration</dt>
+                <dd>Placeholder — approx. 60 minutes, walk-through</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="placeholder-box reveal">Map / Venue Image Placeholder</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking CTA -->
+    <section class="cta-band reveal">
+      <div class="container">
+        <h2>Begin Your Journey</h2>
+        <p>Placeholder copy — limited walk-throughs per day, booking recommended in advance.</p>
+        <a href="pages/tickets.html" class="btn btn-primary">See Tickets &amp; Pricing</a>
+      </div>
+    </section>
+
+    <!-- FAQ teaser -->
+    <section class="section" id="faq-teaser">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Good to Know</span>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <h3>Placeholder question about age restrictions or comfort?</h3>
+            <p>Placeholder answer text.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Placeholder question about group bookings?</h3>
+            <p>Placeholder answer text.</p>
+          </div>
+        </div>
+        <a href="pages/faq.html" class="btn btn-ghost" style="margin-top: var(--space-md);">View All FAQs</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>33AD</h4>
+          <p>Placeholder one-line description of the experience and production.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:placeholder@33ad.example">placeholder@33ad.example</a>
+          <a href="tel:+10000000000">+1 (000) 000-0000</a>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <a href="#">Instagram (placeholder)</a>
+          <a href="#">Facebook (placeholder)</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 33AD. All rights reserved. Placeholder footer text.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script type="module" src="js/intro-scene.js"></script>
+</body>
+</html>

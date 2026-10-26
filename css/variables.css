@@ -1,0 +1,38 @@
+:root {
+  /* Backgrounds */
+  --bg-void: #0b0b0d;
+  --bg-surface: #15151a;
+  --bg-surface-alt: #1b1b22;
+
+  /* Accents */
+  --gold: #c9a24b;
+  --gold-dim: #8a7139;
+  --crimson: #8a1f1f;
+  --crimson-bright: #b32d2d;
+  --glow: #5fd1c9;
+
+  /* Text */
+  --ink: #ece6d9;
+  --ink-dim: #a8a296;
+
+  /* Lines / borders */
+  --border-subtle: rgba(201, 162, 75, 0.25);
+  --border-glow: rgba(95, 209, 201, 0.4);
+
+  /* Type */
+  --font-display: 'Cormorant Garamond', 'Playfair Display', serif;
+  --font-body: 'Space Grotesk', 'Inter', sans-serif;
+
+  /* Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  /* Misc */
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --max-width: 1200px;
+  --transition: 0.3s ease;
+}
